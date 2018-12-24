@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "js-yaml": "^3.12.0",
+    "passepartout": "0.0.8"
+  },
+  "devDependencies": {
+    "stylus": "^0.54.5",
+    "typescript": "^3.2.2"
+  },
+  "scripts": {
+    "start": "parcel index.html"
+  }
+}

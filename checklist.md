@@ -1,0 +1,9 @@
+- Conventions
+- Enforced Versioning
+- IO Table
+- Init
+- => /
+- Global Transitions
+- Return
+- 10ms / 5s
+- \1. level and 2. level or

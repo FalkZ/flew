@@ -1,0 +1,83 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; // monospace;
+}
+
+button {
+    display: block;
+    margin: 10px;
+    background: #ccd;
+    border-radius: 20px;
+    padding: 5px 10px;
+    outline: none;
+    border: 2px solid rgba(#fff, 0.7);
+
+    &.green {
+        background: saturate(darken(aquamarine, 30%), 40%);
+    }
+
+    &.disable {
+        display: none;
+    }
+
+    strong {
+        background: #112;
+        margin: -5px -10px;
+        padding: 5px 10px;
+        border-radius: 20px;
+        color: white;
+        margin-right: 10px;
+    }
+}
+
+.state {
+    display: table;
+    border-radius: 20px;
+    padding: 20px;
+    background: #ccd;
+    margin: 10px;
+    border: 2px solid rgba(#fff, 0.7);
+    overflow: hidden;
+
+    h2 {
+        margin: -20px;
+        margin-bottom: 20px;
+    }
+
+    &.active {
+        background: aquamarine;
+    }
+}
+
+h2 {
+    display: block;
+    padding: 8px 20px;
+    background: #112;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 12px;
+}
+
+.title {
+    border-radius: 25px;
+}
+
+.condition {
+    border-radius: 5px;
+    padding: 0 5px;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.contents {
+    display: contents;
+}
+
+.state.active .condition.active {
+    background: rgba(#fff, 0.6);
+}
+
+.block {
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+}

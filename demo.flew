@@ -1,0 +1,28 @@
+Title: Demo Projekt
+Creator: Falk Zwimpfer
+Version: 0.0.1
+
+Inputs:
+  tor auf innen: 5.1
+  tor auf aussen: 1.0
+  fehler tor: 0.0
+  fehler steuerung: 0.4
+  reset: 0.1
+
+Outputs:
+  tor zu: 1.2
+  tor auf: 1.1
+
+Global Transitions:
+  fehler tor | fehler steuerung => Fehler
+
+Init:
+  tor auf innen & tor auf aussen => Tor auf
+
+Tor auf:
+  tor auf = 1
+  fehler tor | fehler steuerung & tor auf aussen => Fehler
+
+Fehler:
+  tor auf = 1
+  reset => Init
